@@ -1,3 +1,43 @@
+PS C:\Users\reish> git --version
+git version 2.47.0.windows.2
+PS C:\Users\reish>
+PS C:\Users\reish> git config --global user.name "Lei50"
+PS C:\Users\reish> git config --global user.email "shishirarure826@gmail.com"
+PS C:\Users\reish> git config --global user.name
+Lei50
+PS C:\Users\reish> git config --global user.email
+shishirarure826@gmail.com
+PS C:\Users\reish> git config init.defaultBranch
+main
+PS C:\Users\reish> cd [TEST]              
+cd : パス '[TEST]' が存在しないため検出できません。
+発生場所 行:1 文字:1
++ cd [TEST]
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: ([TEST]:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\reish> cd C:\Users\reish\OneDrive\デスクトップ\プログラミング
+PS C:\Users\reish\OneDrive\デスクトップ\プログラミング>
+PS C:\Users\reish\OneDrive\デスクトップ\プログラミング> mkdir git_tutorial                                        
+                     
+
+    ディレクトリ: C:\Users\reish\OneDrive\デスクトップ\プログラミング
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/11/28      6:04                git_tutorial
+
+
+PS C:\Users\reish\OneDrive\デスクトップ\プログラミング> cd git_tutorial
+PS C:\Users\reish\OneDrive\デスクトップ\プログラミング\git_tutorial> git init
+Initialized empty Git repository in C:/Users/reish/OneDrive/デスクトップ/プログラミング/git_tutorial/.git/
+PS C:\Users\reish\OneDrive\デスクトップ\プログラミング\git_tutorial> git add sample.txt
+PS C:\Users\reish\OneDrive\デスクトップ\プログラミング\git_tutorial> git commit -m "最初のコミット”                
+[main (root-commit) c23ea74] 最初のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
 PS C:\Users\reish\OneDrive\デスクトップ\プログラミング\git_tutorial> cd C:\Users\reish\OneDrive\デスクトップ\プログラミング
 PS C:\Users\reish\OneDrive\デスクトップ\プログラミング> mkdir git_challenge
 
@@ -35,9 +75,33 @@ Date:   Thu Nov 28 06:43:09 2024 +0900
 
     2行目追加
 
+    2行目追加
+
+commit 1e5c2404d8f27dc5a518cf612bb8bbfe45702556 (HEAD -> main)
+Author: Lei50 <shishirarure826@gmail.com>
+Date:   Thu Nov 28 06:43:09 2024 +0900
+
+    2行目追加
+commit 1e5c2404d8f27dc5a518cf612bb8bbfe45702556 (HEAD -> main)
+Author: Lei50 <shishirarure826@gmail.com>
+Date:   Thu Nov 28 06:43:09 2024 +0900
+
+    2行目追加
+
 commit 27c1ab535f59966f06982369e6a7e83dfe378b20
 Author: Lei50 <shishirarure826@gmail.com>
 Date:   Thu Nov 28 06:40:47 2024 +0900
 
     1行追加コミット
+
+commit 9614ce92015399514eb1cd80d31e4c7089f5d443
+Author: Lei50 <shishirarure826@gmail.com>
+Date:   Thu Nov 28 06:35:14 2024 +0900
+
+    最初のコミット
+PS C:\Users\reish\OneDrive\デスクトップ\プログラミング\git_challenge> git log --oneline
+1e5c240 (HEAD -> main) 2行目追加
+27c1ab5 1行追加コミット
+9614ce9 最初のコミット
+PS C:\Users\reish\OneDrive\デスクトップ\プログラミング\git_challenge> 
 :
